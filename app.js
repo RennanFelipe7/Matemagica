@@ -15,7 +15,7 @@ app.get('/Matemagica', function(req, res) {
 });
 
 
-PORT = 8085
+PORT = process.env.PORT || 8085
 app.listen(PORT, () => {
 
 })  
