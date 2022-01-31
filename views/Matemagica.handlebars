@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./css/Matemagica.css">
+        <script src="./JavaScript/Matematica.js" defer></script>
+    </head>
+
+    <body>
+        <div class="logo"> 
+            <img src="./img/logo.png" alt="" class="imgMatemagica" onclick="location.href='Matemagica'">
+        </div> 
+        <div class="divEsquerda"><img src="img/mais.png" alt="" class="simb1"><img src="img/menos.png" alt="" class="simb2">
+        <img src="img/vezes.png" alt="" class="simb3"><img src="img/divisao.png" alt="" class="simb4"></div>
+        <div class="divDireita"> <img src="img/magico.png"alt="" class="simb1"> <img src="img/ch1.png" 
+        alt="" class="simb2"> <img src="img/varinha.png" alt="" class="simb3"> <img src="img/ch2.png" alt="" class="simb4"></div>
+        <div class="comecarOJogo" id="divComecarOJogo">
+                <p class="escolhaNumero">Escolha um número entre 1 e 21</p>
+                <button class="btComecar" id="btComecar">Começar</button>
+            </div>
+        <form action="">
+            
+        </form>
+        <div class="aconteceOJogo" id="divAconteceOJogo">
+            <label for="lista1" class="listas">Lista 1:</label>
+            <div id="lista1" class="ficaNumeros">
+                <ul class="listaDeNumeros1">
+                    <li id="p1"></li><li id="p2"></li><li id="p3"></li><li id="p4">9</li><li id="p5"></li><li id="p6"></li><li id="p7"></li>
+                </ul>
+            </div><br><br>
+            <label for="lista2" class="listas">Lista 2:</label>
+            <div id="lista2" class="ficaNumeros">
+                <ul class="listaDeNumeros2">
+                    <li id="p8"></li><li id="p9"></li><li id="p10"></li><li id="p11"></li><li id="p12"></li><li id="p13"></li><li id="p14"></li>
+                </ul>
+            </div><br><br>
+            <label for="lista3" class="listas">Lista 3:</label>
+            <div id="lista3" class="ficaNumeros">
+                <ul class="listaDeNumeros3">
+                    <li id="p15"></li><li id="p16"></li><li id="p17"></li><li id="p18"></li><li id="p19"></li><li id="p20"></li><li id="p21"></li>
+                </ul>
+            </div> 
+            <div class="escolha">
+                <p class="qualLista">Qual a lista que seu número ficou?</p>
+                <label for="l1" class="labelLista">Lista 1</label>
+                <input type="radio" name="lista" id="l1">
+                <label for="l2" class="labelLista">Lista 2</label>
+                <input type="radio" name="lista" id="l2">
+                <label for="l3" class="labelLista">Lista 3</label>
+                <input type="radio" name="lista" id="l3">
+            </div>
+            <button class="btConfirmar" id="btConfirmar">Confirmar</button>
+        </div>
+            <div class="desfoca" id="DivDesfoca">
+               
+                <div class="resultado" id="divResultado">
+                    <p class="nomeResultado">O número que você escolheu foi o: </p>
+                    <p id="result" class="numeroEscolhido"></p>
+                </div>
+            </div>
+    </body>
+
+</html>
