@@ -235,3 +235,146 @@ input[type='radio']:checked:after {
     display: none;
     position: relative;
 }
+
+@media only screen and (max-width: 1000px){  /*1080px*/
+    .imgMatemagica{
+        margin-left: 17%;
+    }
+    .divEsquerda{
+        height: 2300px;
+    }
+    .simb2{
+        margin-top: 600%;
+    }
+    .simb3{
+        margin-top: 600%;
+    }
+    .simb4{
+        margin-top: 700%;
+    }
+    .divDireita{
+        height: 2300px;
+    }
+    .comecarOJogo{
+        margin-left: 25%;
+        margin-right: 30%;
+        color: white;
+        font-size: 50px;
+        padding-left: 10%;
+        margin-top: 60%;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 450px;
+        height: 600px;
+        word-spacing: 10px;
+        
+    }
+    .escolhaNumero{
+        margin-left: -5%;
+        padding-top: 5%;
+        margin-right: 5%;
+    }
+    .btComecar{
+        background-color:green;
+        border-radius: 10px;
+        width: 250px;
+        height: 150px;
+        margin-left: 10%;
+        margin-top: 15%;
+        font-weight: bold;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+    }
+    .aconteceOJogo{
+        
+    }
+    .listas{
+        font-size: 80px;
+        margin-left: 40%;
+    }
+    .ficaNumeros{
+        margin-top: 5%;
+        font-size: 40px;
+        height: 100px;
+    }
+    .responsivo1{
+        margin-top: 20%;
+    }
+    .responsivo2{
+        margin-top: 20%;
+    }
+    .responsivo3{
+        margin-top: 20%;
+    }
+    
+    .qualLista{
+        padding-top: 10%;
+        font-size: 40px;
+        margin-left: 12%;
+    }
+    .labelLista{
+        font-size: 50px;
+        margin-left: 12.5%;
+    }
+    
+    .radios{
+        margin-top: 10%;
+        
+    }
+    .listaDeNumeros1 li{
+        margin-left: 20%;
+    }
+    .listaDeNumeros2 li{
+        margin-left: 20%;
+    }
+    .listaDeNumeros3 li{
+        margin-left: 20%;
+    }
+    input[type='radio']:after {
+        width: 40px;
+        height: 40px;
+        border-radius:100%;
+        top: -25px;
+        left: -2px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #ff000d;
+        cursor: pointer;
+        
+    }
+    input[type='radio']:checked:after {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        top: -25px;
+        left: -2px;
+        position: relative;
+        background-color: #08fd45;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid rgb(0, 89, 255); /*OU trocar white por #057FB7*/
+        cursor: pointer;
+    }
+    .btConfirmar{
+        margin-left: 36.5%;
+        margin-top: 7%;
+        color: white;
+        width: 300px;
+        height:100px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 40px; 
+    }
+    .resultado{
+        width: 600px;
+        height: 600px;
+        margin-top: -100%;
+        font-size: 120px;
+    }
+
+}
