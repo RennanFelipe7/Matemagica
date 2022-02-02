@@ -63,7 +63,7 @@ body{
     padding-top: 5%;
 }
 .btComecar{
-    background-color:green;
+    background-color:#08fd45;
     border-radius: 5px;
     width: 150px;
     height: 50px;
@@ -242,7 +242,7 @@ input[type='radio']:checked:after {
     }
     .divEsquerda{
         height: 2000px;
-        margin-top: -8.7%;
+        margin-top: -10.6%;
     }
     .simb2{
         margin-top: 500%;
@@ -255,7 +255,7 @@ input[type='radio']:checked:after {
     }
     .divDireita{
         height: 2000px;
-        margin-top: -8.7%;
+        margin-top: -10.6%;
     }
     .comecarOJogo{
         margin-left: 22%;
@@ -277,7 +277,7 @@ input[type='radio']:checked:after {
         margin-right: 5%;
     }
     .btComecar{
-        background-color:green;
+        background-color:#08fd45;
         border-radius: 10px;
         width: 250px;
         height: 150px;
@@ -299,15 +299,18 @@ input[type='radio']:checked:after {
         margin-top: 5%;
         font-size: 40px;
         height: 100px;
+        margin-left: 12%;
+        margin-right: 12%;
+        
     }
     .responsivo1{
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .responsivo2{
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .responsivo3{
-        margin-top: 15%;
+        margin-top: 10%;
     }
     
     .qualLista{
@@ -317,12 +320,12 @@ input[type='radio']:checked:after {
     }
     .labelLista{
         font-size: 50px;
-        margin-left: 10.5%;
+        margin-left: 6.5%;
     }
     
     .radios{
         margin-top: 10%;
-        margin-left: 2%;
+        margin-left: 5%;
     }
     .listaDeNumeros1 li{
         margin-left: 18%;
@@ -373,20 +376,20 @@ input[type='radio']:checked:after {
         font-size: 40px; 
     }
     .resultado{
-        width: 600px;
-        height: 600px;
+        width: 500px;
+        height: 500px;
         margin-top: 30%;
         font-size: 120px;
         margin-left: 12%;
         position: absolute;
     }
     .desfoca{
-        margin-top: -173%;
+        margin-top: -176%;
         position: relative;
 
-        width: 81.35%;
-        height: 1912px;
-        margin-left: 9.37%;
+        width: 78%;
+        height: 1919px;
+        margin-left: 11.17%;
     
     
 
