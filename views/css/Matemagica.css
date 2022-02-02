@@ -1,9 +1,9 @@
 body{
     background-image: linear-gradient(to bottom right, rgb(129, 129, 129), rgb(129, 128, 128));
 }
-.logo{
+/*.logo{
     
-}
+}*/
 .imgMatemagica{
     margin-left: 21%;
     cursor: pointer;
@@ -236,27 +236,29 @@ input[type='radio']:checked:after {
     position: relative;
 }
 
-@media only screen and (max-width: 1000px){  /*1080px*/
+@media only screen and (max-width: 1079px){  /*1080px*/
     .imgMatemagica{
-        margin-left: 17%;
+        margin-left: 15%;
     }
     .divEsquerda{
-        height: 2300px;
+        height: 2000px;
+        margin-top: -8.7%;
     }
     .simb2{
-        margin-top: 600%;
+        margin-top: 500%;
     }
     .simb3{
-        margin-top: 600%;
+        margin-top: 500%;
     }
     .simb4{
-        margin-top: 700%;
+        margin-top: 600%;
     }
     .divDireita{
-        height: 2300px;
+        height: 2000px;
+        margin-top: -8.7%;
     }
     .comecarOJogo{
-        margin-left: 25%;
+        margin-left: 22%;
         margin-right: 30%;
         color: white;
         font-size: 50px;
@@ -286,9 +288,9 @@ input[type='radio']:checked:after {
         color: white;
         cursor: pointer;
     }
-    .aconteceOJogo{
+    /*.aconteceOJogo{
         
-    }
+    }*/
     .listas{
         font-size: 80px;
         margin-left: 40%;
@@ -299,13 +301,13 @@ input[type='radio']:checked:after {
         height: 100px;
     }
     .responsivo1{
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .responsivo2{
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .responsivo3{
-        margin-top: 20%;
+        margin-top: 15%;
     }
     
     .qualLista{
@@ -315,21 +317,21 @@ input[type='radio']:checked:after {
     }
     .labelLista{
         font-size: 50px;
-        margin-left: 12.5%;
+        margin-left: 10.5%;
     }
     
     .radios{
         margin-top: 10%;
-        
+        margin-left: 2%;
     }
     .listaDeNumeros1 li{
-        margin-left: 20%;
+        margin-left: 18%;
     }
     .listaDeNumeros2 li{
-        margin-left: 20%;
+        margin-left: 18%;
     }
     .listaDeNumeros3 li{
-        margin-left: 20%;
+        margin-left: 18%;
     }
     input[type='radio']:after {
         width: 40px;
@@ -373,8 +375,21 @@ input[type='radio']:checked:after {
     .resultado{
         width: 600px;
         height: 600px;
-        margin-top: -100%;
+        margin-top: 30%;
         font-size: 120px;
+        margin-left: 12%;
+        position: absolute;
+    }
+    .desfoca{
+        margin-top: -173%;
+        position: relative;
+
+        width: 81.35%;
+        height: 1912px;
+        margin-left: 9.37%;
+    
+    
+
     }
 
 }
