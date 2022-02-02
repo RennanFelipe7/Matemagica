@@ -304,13 +304,13 @@ input[type='radio']:checked:after {
         
     }
     .responsivo1{
-        margin-top: 10%;
+        margin-top: 7%;
     }
     .responsivo2{
-        margin-top: 10%;
+        margin-top: 7%;
     }
     .responsivo3{
-        margin-top: 10%;
+        margin-top: 7%;
     }
     
     .qualLista{
@@ -388,7 +388,7 @@ input[type='radio']:checked:after {
         position: relative;
 
         width: 78%;
-        height: 1919px;
+        height: 1900px;
         margin-left: 11.17%;
     
     
