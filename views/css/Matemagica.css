@@ -241,7 +241,7 @@ input[type='radio']:checked:after {
         margin-left: 15%;
     }
     .divEsquerda{
-        height: 1910px;
+        height: 1920px;
         margin-top: -10.6%;
     }
     .simb2{
@@ -254,7 +254,7 @@ input[type='radio']:checked:after {
         margin-top: 600%;
     }
     .divDireita{
-        height: 1910px;
+        height: 1920px;
         margin-top: -10.6%;
     }
     .comecarOJogo{
@@ -384,11 +384,11 @@ input[type='radio']:checked:after {
         position: absolute;
     }
     .desfoca{
-        margin-top: -178%;
+        margin-top: -175%;
         position: relative;
 
         width: 78%;
-        height: 1900px;
+        height: 1880px;
         margin-left: 11.17%;
     
     
