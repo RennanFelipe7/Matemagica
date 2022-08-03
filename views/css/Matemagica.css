@@ -1,9 +1,13 @@
 body{
     background-image: linear-gradient(to bottom right, rgb(129, 129, 129), rgb(129, 128, 128));
 }
+
 /*.logo{
-    
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: red;
 }*/
+
 .imgMatemagica{
     margin-left: 21%;
     cursor: pointer;
