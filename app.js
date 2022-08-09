@@ -1,6 +1,5 @@
 const express = require('express');
 const { engine } = require ('express-handlebars');
-//const handlebars = require('express-handlebars')
 const app = express();
 app.use(express.static(__dirname + '/views'));
 app.engine('handlebars', engine());

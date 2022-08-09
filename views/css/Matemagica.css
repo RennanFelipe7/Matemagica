@@ -1,402 +1,267 @@
-body{
-    background-image: linear-gradient(to bottom right, rgb(129, 129, 129), rgb(129, 128, 128));
+html, body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 129, 129);
+    display: flex;
 }
 
-/*.logo{
-    margin-left: 20%;
-    margin-right: 10%;
-    background-color: red;
-}*/
-
-.imgMatemagica{
-    margin-left: 21%;
-    cursor: pointer;
-}
-.divEsquerda{
-    margin-top: -8%;
-    border: 2px solid;
-    border-color: black;
-    width: 100px;
-    height: 664px;
-    position: absolute;
+.esquerda, .direita{
     background-color: orange;
-    margin-left: -8px;
+    width: 10%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 0%;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: solid clamp(0.2vw, 0.5vh, 0.7vw);
+    border-right: solid clamp(0.2vw, 0.5vh, 0.7vw);
 }
-.simb1{
-    margin-top: 22%;
-    margin-left: 20%;
-}
-.simb2{
-    margin-top: 120%;
-    margin-left: 20%;
-}
-.simb3{
-    margin-top: 120%;
-    margin-left: 20%;
-}
-.simb4{
-    margin-top: 120%;
-    margin-left: 20%;
-}
-.divDireita{
-    margin-top: -8%;
-    border: 2px solid;
-    border-color: black;
-    width: 100px;
-    height: 664px;
-    float: right;
+.centro{
     position: relative;
-    background-color: orange;
-    margin-right: -8px;
+    width: 80%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-size: 0%;
 }
-.comecarOJogo{
-    background-color: orange;
-    margin-left: 30%;
-    margin-right: 30%;
+.centro img{
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 12%;
+    width: 70%;
+    height: 12%;
+}
+ul{
+    padding: 0%;
+    height: 100%;
+}
+li{
+    list-style-type: none;
+    height: 25%;
+}
+li img{
+    margin: 0%;
+    padding: 30% 0% 0% 0%;
+    height: 40%;
+    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+}
+.listas-numeros{
+    height: 50%;
+    display: none;
+}
+.lista1, .lista2, .lista3{
+    float: left;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    margin-left: 1%;
+}
+.lista1 p, .lista2 p, .lista3 p{
+    margin: 0%;
     color: white;
-    font-size: 20px;
-    padding-left: 10%;
-    margin-top: 15%;
-    border-radius: 5px;
-    font-weight: bold;
-    width: 350px;
-    height: 200px;
+    font-size: clamp(3vw, 4vh, 5vw);
 }
-.escolhaNumero{
-    margin-left: -5%;
-    padding-top: 5%;
+.numeros1, .numeros2, .numeros3{
+    border: solid white clamp(0.2vw, 0.5vh, 0.7vw);
+    box-sizing: border-box;
+    float: right;
+    width: 77%;
+    height: 20%;
+    position: relative;
+    top: 10%;
+    margin-right: 1%;
+}
+.lista2, .numeros2{
+    top: 20%;
+}
+.lista3, .numeros3{
+    top: 30%;
+}
+
+.qualLista{
+    color: white;
+    font-weight: bold;
+    border: 0%;
+    font-size: clamp(2vw, 3vh, 4vw);
+    height: 5%;
+    display: none;
+}
+.qualLista p{
+    margin: 0%;
+}
+.escolheLista{
+    height: 10%;
+    display: none;
+}
+.confirmar{
+    display: none;
+    text-align: center;
+    height: 23%;
+}
+input{
+    display: none;
+}
+button{
+    border-width: clamp(0.2vw, 0.5vh, 0.7vw);
+    cursor: pointer;
+    position: relative;
+    left: 5%;
+    border-color: red;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    height: clamp(2vw, 3vh, 4vw);
+    width: clamp(2vw, 3vh, 4vw);
+}
+.ulLista{
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: white;
+    font-size: clamp(2vw, 3vh, 4vw);
+}
+.ulLista label{
+    cursor: pointer;
+    display: inline-block;
+}
+.ulLista li{
+    cursor: pointer;
+    display: inline-block;
+}
+.confirmarBT{
+    margin-top: 2%;
+    border-color: rgb(255, 255, 255);
+    border-radius: 0%;
+    height: 10vmin;
+    width: 30vmin;
+    background-color: #08fd45;
+    margin-right: 10%;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1.5vw, 2.5vh, 3.5vw);
+}
+.confirmarBT p{
+    margin: 0%;
+}
+.listaDeNumeros1, .listaDeNumeros2, .listaDeNumeros3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1.5vw, 2.5vh, 3.5vw);
+}
+.listaDeNumeros1 li, .listaDeNumeros2 li, .listaDeNumeros3 li{
+    display: inline-block;
+}
+
+.comecar{
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1.5vw, 2.5vh, 3.5vw);
+    top: 27%;
+    background-color: orange;
+    height: 30%;
+    width: 68%;
+    margin-left: 16%;
+    position: relative;
+}
+.comecar div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.comecar div p:nth-child(1){
+    margin: 0%;
+}
+.comecar div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
 }
 .btComecar{
-    background-color:#08fd45;
-    border-radius: 5px;
-    width: 150px;
-    height: 50px;
-    margin-left: 10%;
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    cursor: pointer;
-}
-/*ACONTECE O JOGO*/
-.aconteceOJogo{
-    display: none;
-    
-    margin-top: 5%;
-}
-.listas{
-    color: white;
-    position: relative;
-    margin-left: 10%;
-    font-size: 30px;
-}
-.ficaNumeros{
-    border: 2px solid white;
-    margin-left: 19%;
-    margin-right: 15%;
-    height: 40px;
-    margin-top: -3%;
-}
-.listaDeNumeros1{
-    margin-left: -25px;
-    list-style-type: none;
-    display: inline-flex;
-    line-height: 10px;
-    margin-bottom: 30px;
+    font-size: clamp(1.5vw, 2.5vh, 3.5vw);
     color: white;
     font-weight: bold;
-}
-.listaDeNumeros1 li{
-    margin-left: 85%;
-}
-.listaDeNumeros2{
-    margin-left: -25px;
-    list-style-type: none;
-    display: inline-flex;
-    line-height: 10px;
-    margin-bottom: 30px;
-    color: white;
-    font-weight: bold;
-}
-.listaDeNumeros2 li{
-    margin-left: 85%;
-}
-.listaDeNumeros3{
-    margin-left: -25px;
-    list-style-type: none;
-    display: inline-flex;
-    line-height: 10px;
-    margin-bottom: 30px;
-    color: white;
-    font-weight: bold;
-}
-.listaDeNumeros3 li{
-    margin-left: 85%;
-}
-.qualLista{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    margin-left: 7%;
-    margin-top: 3%;
-}
-.labelLista{
-    margin-left: 20%;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-}
-/*input[type='radio']:after {
-    margin-left: 25.5%;
-    margin-top: 33.4%;
-    float: right;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    top: -2px;
-    left: -1px;
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-    content: '';
-    visibility: visible;
-    border: 2px solid #057FB7;
-}*/
-input[type='radio']:after {
-    width: 20px;
-    height: 20px;
-    border-radius:100%;
-    top: -5px;
-    left: -2px;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid #ff000d;
-    cursor: pointer;
-}
-input[type='radio']:checked:after {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    top: -5px;
-    left: -2px;
-    position: relative;
+    left: 0%;
+    border-color: white;
     background-color: #08fd45;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid rgb(0, 89, 255); /*OU trocar white por #057FB7*/
-    cursor: pointer;
+    border-radius: 0%;
+    height: 10vmin;
+    width: 40%;
 }
-.btConfirmar{
-    margin-left: 42%;
-    background-color: #08fd45;
-    margin-top: 3%;
-    color: white;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-}
-.resultado{
-    margin-left: 20%;
-    margin-right: 40%;
-    width: 600px;
-    height: 300px;
-    color: rgb(0, 47, 255);
-    font-size: 30px;
-    border: 2px solid black;
-    background-color: orange;
-    margin-top: 14%;
+
+.cinza{
     display: none;
-    position: absolute;
-}
-.nomeResultado{
-    color: white;
-    font-size: 30px;
-    margin-top: 15%;
-    margin-left: 2%;
-    text-align: center;
-}
-.numeroEscolhido{
-    font-size: 70px;
-    color: white;
-    margin-left: 45%;
-    margin-top: 5%;
-}
-.desfoca{
+    top: -88%;
+    position: relative;
     background-color: rgba(160, 182, 173, 0.658);
-    width: 84.75%;
-    height: 567px;
-    margin-left: 7.64%;
-    
-    margin-top: -36%;
+    height: 88%;
+}
+.result{
     display: none;
     position: relative;
+    top: 27%;
+    background-color: orange;
+    height: 50%;
+    width: 68%;
+    margin-left: 16%;
 }
-
-@media only screen and (max-width: 1079px){  /*1080px*/
-    .imgMatemagica{
-        margin-left: 15%;
-    }
-    .divEsquerda{
-        height: 1930px;
-        margin-top: -10.6%;
-    }
-    .simb2{
-        margin-top: 500%;
-    }
-    .simb3{
-        margin-top: 500%;
-    }
-    .simb4{
-        margin-top: 600%;
-    }
-    .divDireita{
-        height: 1930px;
-        margin-top: -10.6%;
-    }
-    .comecarOJogo{
-        margin-left: 22%;
-        margin-right: 30%;
-        color: white;
-        font-size: 50px;
-        padding-left: 10%;
-        margin-top: 60%;
-        border-radius: 5px;
-        font-weight: bold;
-        width: 450px;
-        height: 600px;
-        word-spacing: 10px;
-        
-    }
-    .escolhaNumero{
-        margin-left: -5%;
-        padding-top: 5%;
-        margin-right: 5%;
-    }
-    .btComecar{
-        background-color:#08fd45;
-        border-radius: 10px;
-        width: 250px;
-        height: 150px;
-        margin-left: 10%;
-        margin-top: 15%;
-        font-weight: bold;
-        font-size: 35px;
-        color: white;
-        cursor: pointer;
-    }
-    /*.aconteceOJogo{
-        
-    }*/
-    .listas{
-        font-size: 80px;
-        margin-left: 40%;
-    }
-    .ficaNumeros{
-        margin-top: 5%;
-        font-size: 40px;
-        height: 100px;
-        margin-left: 12%;
-        margin-right: 12%;
-        
-    }
-    .responsivo1{
-        margin-top: 7%;
-    }
-    .responsivo2{
-        margin-top: 7%;
-    }
-    .responsivo3{
-        margin-top: 7%;
-    }
-    
-    .qualLista{
-        padding-top: 10%;
-        font-size: 40px;
-        margin-left: 12%;
-    }
-    .labelLista{
-        font-size: 50px;
-        margin-left: 6.5%;
-    }
-    
-    .radios{
-        margin-top: 10%;
-        margin-left: 5%;
-    }
-    .listaDeNumeros1 li{
-        margin-left: 18%;
-    }
-    .listaDeNumeros2 li{
-        margin-left: 18%;
-    }
-    .listaDeNumeros3 li{
-        margin-left: 18%;
-    }
-    input[type='radio']:after {
-        width: 40px;
-        height: 40px;
-        border-radius:100%;
-        top: -25px;
-        left: -2px;
-        position: relative;
-        background-color: rgb(255, 255, 255);
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid #ff000d;
-        cursor: pointer;
-        
-    }
-    input[type='radio']:checked:after {
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        top: -25px;
-        left: -2px;
-        position: relative;
-        background-color: #08fd45;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid rgb(0, 89, 255); /*OU trocar white por #057FB7*/
-        cursor: pointer;
-    }
-    .btConfirmar{
-        margin-left: 36.5%;
-        margin-top: 7%;
-        color: white;
-        width: 300px;
-        height:100px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 40px; 
-    }
-    .resultado{
-        width: 500px;
-        height: 500px;
-        margin-top: 30%;
-        font-size: 120px;
-        margin-left: 12%;
-        position: absolute;
-    }
-    .desfoca{
-        margin-top: -175%;
-        position: relative;
-
-        width: 78%;
-        height: 1880px;
-        margin-left: 11.17%;
-    
-    
-
-    }
-
+.result div:nth-child(1){
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result div p:nth-child(1){
+    font-weight: bold;
+    margin: 0%;
+    color: white;
+    font-size: clamp(2vw, 3vh, 3vw);
+}
+.result div:nth-child(2) p{
+    font-size: clamp(7vw, 10vh, 11vw);
+}
+.result div:nth-child(2){
+    color: white;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result div:nth-child(3){
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jogarNovamente{
+    font-size: clamp(2vw, 3vh, 3vw);
+    border-color: white;
+    left: 0%;
+    border-radius: 0%;
+    background-color: #08fd45;
+    color: white;
+    font-weight: bold;
+    height: 10vmin;
+    width: 40%;
 }

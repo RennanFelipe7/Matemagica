@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang=”pt-br”>
-
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./css/Matemagica.css">
-        <script src="./JavaScript/Matematica.js" defer></script>
+        <script src="./JavaScript/Matemagica.js" defer></script>
     </head>
 
-    <body>
-        <div class="logo"> 
-            <img src="./img/logo.png" alt="" class="imgMatemagica" onclick="location.href='Matemagica'">
-        </div> 
-        <div class="divEsquerda"><img src="img/mais.png" alt="" class="simb1"><img src="img/menos.png" alt="" class="simb2">
-        <img src="img/vezes.png" alt="" class="simb3"><img src="img/divisao.png" alt="" class="simb4"></div>
-        <div class="divDireita"> <img src="img/magico.png"alt="" class="simb1"> <img src="img/ch1.png" 
-        alt="" class="simb2"> <img src="img/varinha.png" alt="" class="simb3"> <img src="img/ch2.png" alt="" class="simb4"></div>
-        <div class="comecarOJogo" id="divComecarOJogo">
-                <p class="escolhaNumero">Escolha um número entre 1 e 21</p>
-                <button class="btComecar" id="btComecar">Começar</button>
+    <div class="esquerda">
+        <ul>
+            <li><img src="img/mais.png" alt=""></li>
+            <li><img src="img/menos.png" alt=""></li>
+            <li><img src="img/vezes.png" alt=""></li>
+            <li><img src="img/divisao.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="centro"> 
+        <img src="./img/logo.png" alt="" class="imgMatemagica" onclick="location.href='Matemagica'">
+        <div class="listas-numeros" id="ln">
+            <div class="lista1"><p>Lista 1:</p></div><div class="numeros1">
+                <ul class="listaDeNumeros1">
+                    <li id="p1"></li><li id="p2"></li><li id="p3"></li><li id="p4"></li><li id="p5"></li><li id="p6"></li><li id="p7"></li>
+                </ul>
             </div>
-        <form action="">
-            
-        </form>
-        <div class="aconteceOJogo" id="divAconteceOJogo">
-            <div class="responsivo1">
-                <label for="lista1" class="listas">Lista 1:</label>
-                <div id="lista1" class="ficaNumeros">
-                    <ul class="listaDeNumeros1">
-                        <li id="p1"></li><li id="p2"></li><li id="p3"></li><li id="p4"></li><li id="p5"></li><li id="p6"></li><li id="p7"></li>
-                    </ul>
-                </div><br><br>
+            <div class="lista2"><p>Lista 2:</p></div><div class="numeros2">
+                <ul class="listaDeNumeros2">
+                    <li id="p8"></li><li id="p9"></li><li id="p10"></li><li id="p11"></li><li id="p12"></li><li id="p13"></li><li id="p14"></li>
+                </ul>
             </div>
-            <div class="responsivo2">
-                <label for="lista2" class="listas">Lista 2:</label>
-                <div id="lista2" class="ficaNumeros">
-                    <ul class="listaDeNumeros2">
-                        <li id="p8"></li><li id="p9"></li><li id="p10"></li><li id="p11"></li><li id="p12"></li><li id="p13"></li><li id="p14"></li>
-                    </ul>
-                </div><br><br>
+            <div class="lista3"><p>Lista 3:</p></div><div class="numeros3">
+                <ul class="listaDeNumeros3">
+                    <li id="p15"></li><li id="p16"></li><li id="p17"></li><li id="p18"></li><li id="p19"></li><li id="p20"></li><li id="p21"></li>
+                </ul>
             </div>
-            <div class="responsivo3">
-                <label for="lista3" class="listas">Lista 3:</label>
-                <div id="lista3" class="ficaNumeros">
-                    <ul class="listaDeNumeros3">
-                        <li id="p15"></li><li id="p16"></li><li id="p17"></li><li id="p18"></li><li id="p19"></li><li id="p20"></li><li id="p21"></li>
-                    </ul>
-                </div> 
-            </div>
-            <div class="escolha">
-                <p class="qualLista">Qual a lista que seu número ficou?</p>
-                <div class="radios">
-                    <label for="l1" class="labelLista">Lista 1</label>
-                    <input type="radio" name="lista" id="l1">
-                    <label for="l2" class="labelLista">Lista 2</label>
-                    <input type="radio" name="lista" id="l2">
-                    <label for="l3" class="labelLista">Lista 3</label>
-                    <input type="radio" name="lista" id="l3">
-                </div> 
-            </div>
-            <button class="btConfirmar" id="btConfirmar">Confirmar</button>
         </div>
-            <div class="desfoca" id="DivDesfoca">
-               
-                <div class="resultado" id="divResultado">
-                    <p class="nomeResultado">O número que você escolheu foi o: </p>
-                    <p id="result" class="numeroEscolhido"></p>
-                </div>
-            </div>
-    </body>
-
+        <div class="comecar" id="divComecar">
+            <div><p>Escolha um número entre 1 e 21</p></div>
+            <div><button class="btComecar" id="comecar">Começar</button></div>
+        </div>
+        <div class="qualLista" id="ql"><p>Qual lista seu número ficou?</p></div>
+        <div class="escolheLista" id="el">
+            <ul class="ulLista">
+                <li><label for="l1" id="LabelL1">Lista 1</label><input type="radio" name="lista" id="l1"><button id="l1BT"></button></li>
+                <li><label for="l2" id="LabelL2">Lista 2</label><input type="radio" name="lista" id="l2"><button id="l2BT"></button></li>
+                <li><label for="l3" id="LabelL3">Lista 3</label><input type="radio" name="lista" id="l3"><button id="l3BT"></button></li>
+            </ul>
+        </div>
+        <div class="confirmar" id="cf"><button class="confirmarBT" id="btConfirmar"><p>Confirmar</p></button></div>
+        <div class="cinza" id="DivDesfoca"></div>
+        <div class="result" id="divResultado">
+            <div><p>O número que você escolheu foi o:</p></div>
+            <div><p id="resultNumero"></p></div>
+            <div><button class="jogarNovamente" id="jogarNovamente">Jogar Novamente</button></div>
+        </div>
+    </div> 
+    <div class="direita">
+        <ul>
+            <li><img src="img/ch1.png" alt=""></li>
+            <li><img src="img/ch2.png" alt=""></li>
+            <li><img src="img/ch3.png" alt=""></li>
+            <li><img src="img/ch4.png" alt=""></li>
+        </ul>
+    </div>
 </html>
