@@ -70,7 +70,7 @@ li img{
 .lista1 p, .lista2 p, .lista3 p{
     margin: 0%;
     color: white;
-    font-size: clamp(3vw, 4vh, 5vw);
+    font-size: clamp(3vw, 3.7vh, 4.7vw);
 }
 .numeros1, .numeros2, .numeros3{
     border: solid white clamp(0.2vw, 0.5vh, 0.7vw);
@@ -123,6 +123,7 @@ button{
     background-color: rgb(255, 255, 255);
     height: clamp(2vw, 3vh, 4vw);
     width: clamp(2vw, 3vh, 4vw);
+    box-sizing: border-box;
 }
 .ulLista{
     align-items: center;
