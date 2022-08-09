@@ -121,9 +121,8 @@ button{
     box-sizing: border-box;
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
-    height: clamp(2vw, 3vh, 4vw);
-    width: clamp(2vw, 3vh, 4vw);
-    box-sizing: border-box;
+    height: 3.8vmin;
+    width: 3.8vmin;
 }
 .ulLista{
     align-items: center;
@@ -134,9 +133,9 @@ button{
     justify-content: space-around;
     font-weight: bold;
     color: white;
-    font-size: clamp(2vw, 3vh, 4vw);
 }
 .ulLista label{
+    font-size: clamp(2vw, 3vh, 4vw);
     cursor: pointer;
     display: inline-block;
 }
