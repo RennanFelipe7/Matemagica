@@ -102,7 +102,21 @@ li img{
 }
 .escolheLista{
     height: 10%;
+    /*display: none;*/
     display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.escolheLista div{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2vw, 3vh, 4vw);
+    color: white;
+    font-weight: bold;
 }
 .confirmar{
     display: none;
@@ -121,10 +135,11 @@ button{
     box-sizing: border-box;
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
-    height: 3.8vmin;
-    width: 3.8vmin;
+    height: clamp(2vw, 3vh, 4vw);
+    width: clamp(2vw, 3vh, 4vw);
 }
 .ulLista{
+    height: 100%;
     align-items: center;
     justify-content: center;
     margin: 0%;
@@ -134,15 +149,18 @@ button{
     font-weight: bold;
     color: white;
 }
+.ulLista div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08fd45;
+}
 .ulLista label{
     font-size: clamp(2vw, 3vh, 4vw);
     cursor: pointer;
     display: inline-block;
 }
-.ulLista li{
-    cursor: pointer;
-    display: inline-block;
-}
+
 .confirmarBT{
     margin-top: 2%;
     border-color: rgb(255, 255, 255);
@@ -154,6 +172,16 @@ button{
     color: white;
     font-weight: bold;
     font-size: clamp(1.5vw, 2.5vh, 3.5vw);
+    /*animation: passaLinha 1s linear infinite;*/
+}
+@keyframes passaLinha {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 .confirmarBT p{
     margin: 0%;

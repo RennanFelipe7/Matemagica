@@ -10,7 +10,7 @@ botaoComecar.addEventListener("click",function(){
     divComecar.style.display = "none"
     listasNumeros.style.display = "block"
     qualLista.style.display = "block"
-    escolheLista.style.display = "block"
+    escolheLista.style.display = "flex"
     confirmar.style.display = "block"
 
     embaralhoInicial()
