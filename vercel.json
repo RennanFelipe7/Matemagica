@@ -1,5 +1,15 @@
 {
-    "rewrites":  [
-      {"source": "/(.*)", "destination": "/"}
+    "name": "matemagica",
+    "version": 2,
+    "public": true,
+    "build": {
+        "src": "app.js",
+        "use": "@vercel/node"
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.js"
+        }
     ]
-  }
+}
